@@ -60,4 +60,26 @@
         3、检索速度
 
     检索逻辑
-        关键词keyword
+        二级索引
+            一级索引：关键信息
+            二级索引：原始文本
+            
+        关键词
+            elastic search 基于关键字检索
+                json：key-value
+                倒排索引
+                
+    切分 关键信息抽取
+        chunk_size 切分，不能满足复杂的业务场景
+            chunk_overloap 重叠区域
+
+        切分：
+            1、基于NLP篇章分析工具（GitHub）
+                识别段落的主从关系
+            2、Bert，NSP训练，
+                阈值 t
+
+        KeyLLM 
+            - keyBert 基于关键字匹配训练模型
+                向量数据库
+        混合检索
